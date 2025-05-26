@@ -14,6 +14,16 @@ az functionapp create \
   --consumption-plan-location japanwest
 ```
 
+```bash
+az functionapp config appsettings set \
+  --name smatsu-test-func \
+  --resource-group smatsu-test \
+  --settings \
+  CLIENT_ID=<クライアントID> \
+  CLIENT_SECRET=<クライアントシークレット> \
+  TENANT_ID=<テナントID> \
+```
+
 存在するリソースへのデプロイ
 ```bash
     func azure functionapp publish smatsu-test-func --typescrip
