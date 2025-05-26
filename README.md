@@ -14,6 +14,7 @@ az functionapp create \
   --consumption-plan-location japanwest
 ```
 
+AzureFunctionsの環境変数設定
 ```bash
 az functionapp config appsettings set \
   --name smatsu-test-func \
